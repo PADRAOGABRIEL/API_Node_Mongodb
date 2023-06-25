@@ -14,6 +14,12 @@ app.use(express.json())
 const conn = require("./db/conn")
 conn()
 
+// Routes
+const routes = require("./routes/index")
+
+app.use("/api", routes)
+
+
 app.listen(3000, function (){
     console.log("Servidor Online")
     console.log("Porta 3000")

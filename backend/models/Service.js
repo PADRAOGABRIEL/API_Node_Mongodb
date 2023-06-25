@@ -20,7 +20,7 @@ const serviceSchema = new Schema({
         required: true,
     }
 },
-    { timestamps: true }
+    { timestamps: true } // Marca quando foi criada etc
 )
 
 const Service = mongoose.model("Service", serviceSchema)
